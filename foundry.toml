@@ -2,6 +2,7 @@
 src = 'src'
 out = 'out'
 libs = ['lib']
-remappings = ['ds-test/=lib/ds-test/src/']
-
+remappings = ['ds-test/=lib/ds-test/src/', 'solmate/=lib/solmate/src/', 'oz/=lib/openzeppelin-contracts/contracts/']
+gas_reports = ["*"]
+ETH_RPC_URL = 'https://mainnet.infura.io/v3/760c0f52babd4c3095d9bba255b9479b'
 # See more config options https://github.com/gakonst/foundry/tree/master/config
