@@ -23,10 +23,10 @@ contract ArbSwapTest is TestHelper {
         // We need WETH as well as the ERC20
         swapper = new TestSwapper();
 
-        VM.label(DAI, "DAI");
-        VM.label(WETH, "WETH");
-        VM.label(YFI, "YFI");
-        VM.label(USDC, "USDC");
+        hevm.label(DAI, "DAI");
+        hevm.label(WETH, "WETH");
+        hevm.label(YFI, "YFI");
+        hevm.label(USDC, "USDC");
     }
 
     function testFlashswapDAIWETH() public {
