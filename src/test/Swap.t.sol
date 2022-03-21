@@ -2,9 +2,9 @@
 pragma solidity ^0.8.0;
 
 import {IERC20} from "oz/token/ERC20/IERC20.sol";
-import {TestHelper} from "./TestHelper.sol";
+import {TestHelper} from "./helpers/TestHelper.sol";
 
-import {TestSwapper} from "./TestSwapper.sol";
+import {TestSwapper} from "./../swappers/testing-only/TestSwapper.sol";
 import {IWETH9} from "./../interfaces/IWETH9.sol";
 
 contract ArbSwapTest is TestHelper {
